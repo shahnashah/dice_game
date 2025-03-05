@@ -1,0 +1,176 @@
+/* General body and background styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 30px; /* Added margin at the top */
+}
+
+/* Header Styling */
+.site-header {
+    background-color: #b57c3f;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-description {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* Main container for the game */
+#maindiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #dbbe6e, #ffcd98);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for each player section */
+#div1, .div2 {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+h2 {
+    color: #3e3e3e;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Styling for dice image */
+#dice1, #dice6 {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+    background-color: #6e7fdb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+button:disabled {
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color:  #b57c3f;
+    transform: scale(1.05);
+}
+
+/* Scoreboard */
+#div3 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 60%;
+    margin-top: 30px;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table h2 {
+    font-size: 1.3rem;
+    color: #3e3e3e;
+}
+
+table td {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* Input fields for player names */
+.gamecontrol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #6e7fdb;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #maindiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #div1, .div2 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    #div3 {
+        width: 80%;
+    }
+    
+    button {
+        width: 90%;
+    }
+    
+    input[type="text"] {
+        width: 90%;
+    }
+}
